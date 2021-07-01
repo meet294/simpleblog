@@ -2,7 +2,7 @@
 
 
 A blog site made with django, python, sqlite in the backend and html, css, bootstrap for the frontend.
-One can write a blog and publish it. A visitor can comment on the post, which can be later approved by the Author.
+One can write a blog and publish it. A visitor can comment on the post, which can be later approved by the author.
 Below are some images to get the overview of the project.
 
 ![Screenshot (12)](https://user-images.githubusercontent.com/76003434/124101996-91fd5d00-da7d-11eb-8687-217a4cc568fb.png)
