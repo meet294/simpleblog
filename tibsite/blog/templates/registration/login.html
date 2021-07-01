@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="bg-light p-5 rounded-lg m-3">
+	
+	<h2> Please Login: </h2>
+
+	{% if form.errors %}
+		<p>Username or Password is incorrect. Please try again! </p>
+	{% endif %}
+
+	<form action="{% url 'login' %}" method="POST">
+		
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="Login">
+		<input type="hidden" name="next" value="{{next}}">
+
+	</form>
+</div>
+
+{% endblock %}

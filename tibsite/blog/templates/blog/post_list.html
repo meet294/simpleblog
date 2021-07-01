@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+{% block content%}
+
+	<div class="centerstage">
+		
+		{% for post in post_list %}
+
+		<div class="post">
+			<h1><a href="{% url 'post_detail' pk=post.pk %}"></a></h1>
+			<div class="date">
+				<h1>
+					<a class="link-dark" aria-current="page" href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+				{{post.text|safe|linebreaks}}					
+				<p>Published on: {{post.published_date}}</p>
+			</div>
+			<a class="nav-link active" aria-current="page" href="{% url 'post_detail' pk=post.pk %}">{{ post_detail.approve_comments.count }} <button type="button" class="btn btn-outline-primary">Comments</button></a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+{% endblock %}

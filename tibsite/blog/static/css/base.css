@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+.postcontent{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  color: black;
+}
+
+.posttitle{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  color: black;
+}
